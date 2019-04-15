@@ -1,13 +1,13 @@
 # System Design
 
 ## Step 1: Understand overall system / application
-* clarify 
+* clarify by asking questions
 
 ## Step 2: Understand system funcitonal requirements
 * what functions should be supported.
 
 ## Step 3: Understand system non-functional requirements
-* availability, consistency, Partition tolerance
+* availability, consistency, Partition tolerance, trade-off
 
 ## Step 4: Evaluate workload
 * assumption of data
@@ -25,3 +25,22 @@
 
 
 # Case Study
+1. Recommendation System
+
+1. Photosharing Website 
+
+1. Subscription System
+
+1. Twitter
+
+1. Uber
+
+1. Amazon CloudFront
+
+1. Tiny Url
+
+1. Ads click frequency
+
+1. Vending machine
+
+1. Shopping website

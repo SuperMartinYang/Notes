@@ -132,3 +132,10 @@
         * Entry -> delete, changeName
         * File -> getContents
         * Directory -> delete, add entry, getEntries
+
+# More Cases
+1. Chess
+
+1. Elevator
+
+1. Linux Find
