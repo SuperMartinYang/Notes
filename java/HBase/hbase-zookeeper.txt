@@ -1,3 +1,21 @@
 @startuml
-Bob -> Alice : hello
+node zookeeper [
+ ZK Server
+ ZK Peer
+ ZK Peer
+]
+node master
+actor client
+node HBase 
+node RegionServer1
+node RegionServer2
+
+zookeeper <- master
+
+client -> zookeeper : request
+
+zookeeper <-- RegionServer1
+zookeeper <-- RegionServer2
+RegionServer1 --> HBase
+RegionServer2 --> HBase
 @enduml
