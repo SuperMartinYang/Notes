@@ -14,5 +14,11 @@
 ![diagrame for HBase with zookeeper](http://www.plantuml.com/plantuml/proxy?src=https://raw.github.com/supermartinyang/Notes/master/java/HBase/hbase-zookeeper.txt)
 
 ## Usecase
+* real time retrieve data, compare to hive which is better at process data in a date range but slower. 
+* just provide API, no HQL, Hive have HQL, so we can use Pheonix to provide HQL
+* good for structure data
+* column oriented storage
+* PB scale
 
-## 
+## Deploy in linux
+
