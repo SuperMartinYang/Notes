@@ -7,9 +7,8 @@
     |--------------|---------------|---------------|
     | 1 | account {"account": "hello"} <br /> pwd {"password": "111"} | age {"age": 10} <br> education {"edu": "MSIS"} |
 * store CF in HFile
-* depend on zookeeper to get HA
-    ![diagrame for HBase with zookeeper](http://www.plantuml.com/plantuml/proxy?src=https://raw.github.com/supermartinyang/Notes/master/java/HBase/hbase-zookeeper.txt)
-
+* depend on zookeeper to get HA <br>
+![diagrame for HBase with zookeeper](http://www.plantuml.com/plantuml/proxy?src=https://raw.github.com/supermartinyang/Notes/master/java/HBase/hbase-zookeeper.txt)
 
 ## Usecase
 
