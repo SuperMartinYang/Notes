@@ -135,7 +135,59 @@
 
 # More Cases
 1. Chess
+    * s1:
+        * start game
+        * make movement
+        * different piece, different move
+        * get winner
+    * s2:
+        * Game
+        * Board
+        * Piece
+            * Elephant, Horse, King
+    * s3:
+        * Game has one Board
+        * Board has several Pieces
+    * s4:
+        * Game -> start a new Board, announce the winner, track hist
+        * Board -> movePiece, removePiece, checkMove
+        * Piece -> nextMove(curPosition)
 
 1. Elevator
+    * s1: 
+        * several elavators
+        * go up / down
+        * take specific weight people
+        * status (door, direction, floor)
+    * s2:
+        * ElevatorManager
+        * Elevator
+        * Command
+            * different commands (Emergency, Floor, Call, CloseDoor)
+        * FloorIndicator
+    * s3:
+        * ElevatorManager has several Elevators
+        * Elevator has several Commands (Command Pattern), has several FloorIndicator
+        * Command is inherited by different command
+    * s4:
+        * ElevatorManager -> requestElevator (direction, floor)
+        * Elevator -> curFloor, doorStatus, weightStatus, maxWeight, direction, commands[]
+        * Command -> execute, undo 
+        * FloorIndicator -> observor, when elevator floor change, update itself
 
 1. Linux Find
+    * s1: 
+        * can find file with different condition
+        * virtual file system to support find 
+    * s2: 
+        * Entry
+            * File, Directory
+        * Finder
+        * FinderBehavior
+            * FinderByPattern, FinderByFallFileName, FinderWithPerm, FinderByGroup
+    * s3: 
+        * Directory has several Entry
+        * Finder has FinderBehavior
+        * FinderBehavior in Directory
+    * s4:
+        * Finder -> find(FinderBehavior fb)
