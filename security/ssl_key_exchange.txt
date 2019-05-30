@@ -1,0 +1,10 @@
+@startuml
+Client -> Server: 1. client hello \n(version, random number #a, support cipher)
+Server -> Client: 2. Server hello \n(version, random number #b, selected cipher, certificate, \npublic key, request client key-optional)
+Client -> Server: 3. Authenticate and PreMaster \n(go to CA check server certificate \nSend PreMaster encrypted by Server Public Key)
+Client: 4. Use Diffie-Hellman to compute \nsecret key with #a, #b, PreMaster 
+Server: 4. Decrypt message in step 3 to get PreMaster \nUse Diffie-Hellman to compute \nsecret key with #a, #b, PreMaster
+Client -> Server: 5. Send message #c encrypted by \nsecret key
+Server -> Client: 6. Decrypt message and encrypt \nmessage by secret key 
+Client -> Server: 7. Decrypt the message and compare,\nif it's correct, keep sending msg
+@enduml
